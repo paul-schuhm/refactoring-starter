@@ -14,9 +14,20 @@
 
 ## Le problème
 
-Imaginez une compagnie de théâtre qui se produit à la demande de clients. Un client commande plusieurs représentations d'un spectacle, la compagnie le facture. Le montant de la facture est défini par la taille de l’audience et le type de pièce joué. La compagnie joue deux types de pièces : des tragédies et des comédies. En plus de la facture, la compagnie délivre à ses clients des "crédits" qu'il peuvent utiliser pour obtenir des réductions sur les prochaines représentations, afin de fidéliser leur clientèle.
+Imaginez une compagnie de théâtre qui se produit à la demande de clients. 
 
-La compagnie stocke les données à propos de ses pièces sous la forme d'un document JSON :
+Un client commande plusieurs représentations d'un spectacle, la compagnie facture. 
+
+Le montant de la facture est définii : 
+
+- par la taille de l’audience ;
+- le type de pièce joué. 
+
+La compagnie joue deux types de pièces : des tragédies et des comédies. 
+
+En plus de la facture, la compagnie délivre à ses clients des *crédits* qu'il peuvent utiliser pour obtenir des réductions sur les prochaines représentations, afin de fidéliser leur clientèle.
+
+La compagnie stocke les données de ses pièces sous la forme d'un simple document JSON :
 
 ~~~JSON
 {
@@ -26,7 +37,7 @@ La compagnie stocke les données à propos de ses pièces sous la forme d'un doc
 }
 ~~~
 
-Leurs données pour les factures sont aussi stockées sous la forme d'un document JSON :
+Leurs données de facturation sont aussi stockées sous la forme d'un document JSON :
 
 ~~~JSON
 [
@@ -45,7 +56,7 @@ Leurs données pour les factures sont aussi stockées sous la forme d'un documen
             "playID": "othello",
             "audience": 40
         }
-        ]
+      ]
     }
 ]
 ~~~
@@ -59,6 +70,8 @@ Pour executer la fonction :
 ~~~bash
 php statement.php
 ~~~
+
+> Des versions identiques codées en [JavaScript(Node.js)](./statement.js) et [Python](./statement.py) sont fournies.
 
 ### Changements à apporter
 
@@ -88,7 +101,7 @@ La compagnie a des nouveaux besoins et demande les *changements* suivants :
 3. **Écrire un test** pour vous permettre de refactorer sans introduire de régression et vous assurer que le comportement observé du code reste le même;
 4. **Versionner le projet**, **faire un premier commit** pour initialiser le suivi de code;
 5. **Refactoriser** le code *par petits pas* pour le structurer, en suivant un cycle *compile, test, commit*
-6. Une fois obtenu un résultat *satisfaisant* et suffisamment *structuré* pour entamer les changements demandés, implémentez-les, un par un.
+6. Une fois obtenu un résultat *satisfaisant* et suffisamment *structuré* pour entamer les changements demandés, **implémentez-les**, un par un.
 
 
 ## Références, liens utiles
